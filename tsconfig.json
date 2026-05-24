@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "lib": ["es2022", "dom"],
+    "types": ["node"]
+  },
+  "include": ["src"]
+}

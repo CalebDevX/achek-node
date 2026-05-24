@@ -1,0 +1,52 @@
+{
+  "name": "achek",
+  "version": "2.0.0",
+  "description": "Official Node.js/TypeScript SDK for Achek — WhatsApp OTP, AI chatbots & business messaging for Nigeria",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "achek",
+    "otp",
+    "whatsapp",
+    "nigeria",
+    "verification",
+    "sms",
+    "2fa",
+    "chatbot"
+  ],
+  "author": "Achek <dev@achek.com.ng>",
+  "license": "MIT",
+  "homepage": "https://achek.com.ng",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CalebDevX/achek-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CalebDevX/achek-node/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
