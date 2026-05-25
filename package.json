@@ -1,6 +1,6 @@
 {
   "name": "achek",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Official Node.js/TypeScript SDK for Achek — WhatsApp OTP, AI chatbots & business messaging for Nigeria",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
