@@ -234,7 +234,7 @@ class HttpClient {
         const headers: Record<string, string> = {
           "Content-Type": "application/json",
           "X-API-Key": this.apiKey,
-          "User-Agent": "@achek/sdk/2.0.0 node",
+          "User-Agent": "achek/2.0.1 node",
         };
         if (idempotencyKey) headers["Idempotency-Key"] = idempotencyKey;
 
@@ -457,7 +457,7 @@ export interface AchekWebhookEvent {
  * The signature is sent in the `X-Achek-Signature` header as `sha256=<hex>`.
  *
  * @example
- * import { AchekWebhookHelper } from "@achek/sdk";
+ * import { AchekWebhookHelper } from "achek";
  *
  * const wh = new AchekWebhookHelper(process.env.ACHEK_WEBHOOK_SECRET!);
  *
