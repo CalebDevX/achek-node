@@ -1,11 +1,11 @@
 /**
- * @achek/sdk — Official Node.js / TypeScript SDK
+ * achek — Official Node.js / TypeScript SDK
  * WhatsApp OTP, Alerts, Broadcasts, Tickets, Email & Webhook utilities
  *
- * npm install @achek/sdk
+ * npm install achek
  *
  * @example
- * import AchekConnect from "@achek/sdk";
+ * import AchekConnect from "achek";
  * const client = new AchekConnect({ apiKey: "achek_live_xxx" });
  * const { requestId } = await client.otp.send("+2348XXXXXXXXX");
  * const { valid }     = await client.otp.verify(requestId, "847293");
